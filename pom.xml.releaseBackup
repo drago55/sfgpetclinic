@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
     <packaging>pom</packaging>
     <modules>
@@ -10,18 +11,18 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.3.3.RELEASE</version>
-		<relativePath /> <!-- lookup parent from repository -->
+		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.horvat</groupId>
 	<artifactId>com.horvat.sfgpetclinicapp</artifactId>
-	<version>0.0.1</version>
-	<name>SfgPetClinicApplication</name>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>com.horvat.sfgpetclinicapp.SfgPetClinicApplication</name>
 	<description>Demo application</description>
 
 	<properties>
 		<java.version>11</java.version>
-		<pet.clinic.data.version />
-		<pet.clinic.web.version />
+		<pet.clinic.data.version></pet.clinic.data.version>
+		<pet.clinic.web.version></pet.clinic.web.version>
 	</properties>
 
 	<build>
@@ -35,13 +36,11 @@
 				<artifactId>maven-release-plugin</artifactId>
 				<configuration>
 					<goals>install</goals>
-					<autoVersionSubmodules>true</autoVersionSubmodules>
 				</configuration>
 			</plugin>
 		</plugins>
 	</build>
 	<scm>
 		<developerConnection>scm:git:https://github.com/drago55/sfgpetclinic.git</developerConnection>
-	  <tag>com.horvat.sfgpetclinicapp-0.0.1</tag>
-  </scm>
+	</scm>
 </project>
