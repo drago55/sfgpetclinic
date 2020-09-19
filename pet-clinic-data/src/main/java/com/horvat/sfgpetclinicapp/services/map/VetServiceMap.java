@@ -2,10 +2,11 @@ package com.horvat.sfgpetclinicapp.services.map;
 
 import com.horvat.sfgpetclinicapp.model.Vet;
 import com.horvat.sfgpetclinicapp.services.CrudService;
+import com.horvat.sfgpetclinicapp.services.VetServices;
 
 import java.util.Set;
 
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements CrudService<Vet, Long> {
+public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetServices {
     @Override
     public Set<Vet> findAll() {
         return super.findAll();

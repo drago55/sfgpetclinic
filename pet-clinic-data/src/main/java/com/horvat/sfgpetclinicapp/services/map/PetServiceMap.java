@@ -1,11 +1,14 @@
 package com.horvat.sfgpetclinicapp.services.map;
 
 import com.horvat.sfgpetclinicapp.model.Pet;
+import com.horvat.sfgpetclinicapp.model.Vet;
 import com.horvat.sfgpetclinicapp.services.CrudService;
+import com.horvat.sfgpetclinicapp.services.PetServices;
+import com.horvat.sfgpetclinicapp.services.VetServices;
 
 import java.util.Set;
 
-public class PetServiceMap extends AbstractMapService<Pet, Long> implements CrudService<Pet, Long> {
+public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetServices {
 
     @Override
     public Set<Pet> findAll() {
@@ -31,4 +34,5 @@ public class PetServiceMap extends AbstractMapService<Pet, Long> implements Crud
     public Pet findById(Long id) {
         return super.findById(id);
     }
+
 }
