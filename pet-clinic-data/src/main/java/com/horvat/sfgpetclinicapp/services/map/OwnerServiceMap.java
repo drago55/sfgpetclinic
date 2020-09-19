@@ -1,11 +1,12 @@
 package com.horvat.sfgpetclinicapp.services.map;
 
 import com.horvat.sfgpetclinicapp.model.Owner;
-import com.horvat.sfgpetclinicapp.services.CrudService;
 import com.horvat.sfgpetclinicapp.services.OwnerService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
 
     @Override

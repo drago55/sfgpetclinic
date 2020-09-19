@@ -1,13 +1,12 @@
 package com.horvat.sfgpetclinicapp.services.map;
 
 import com.horvat.sfgpetclinicapp.model.Pet;
-import com.horvat.sfgpetclinicapp.model.Vet;
-import com.horvat.sfgpetclinicapp.services.CrudService;
 import com.horvat.sfgpetclinicapp.services.PetServices;
-import com.horvat.sfgpetclinicapp.services.VetServices;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetServices {
 
     @Override
